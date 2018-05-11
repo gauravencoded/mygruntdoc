@@ -55,7 +55,7 @@ module.exports = function(grunt)
 
 
  // log something
- grunt.log.write('Hello world! Welcome to Tutorialspoint!!\n');
+ grunt.log.write('Welcome to Grunt! We are running laborious tasks here to save your time \n');
 
  grunt.loadNpmTasks('grunt-contrib-uglify');
  grunt.loadNpmTasks('grunt-contrib-jshint');
@@ -143,8 +143,6 @@ grunt.registerTask('configtasks', 'My task "foo" .', function() {
 
 
 grunt.registerTask('configneedingtask', 'My task "foo" .', function() {
-   // Fail task if meta.name config properties is missing
-   // Format 1: String
    grunt.config.requires('meta.name');
    // or Format 2: Array
    grunt.config.requires(['meta', 'name']);
